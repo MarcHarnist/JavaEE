@@ -26,6 +26,7 @@
     <error-code>404</error-code>
     <location>/modules/modules2/demonstration/404.html</location>
   </error-page>
+  
   <servlet>
     <description>Servlet Module 2 Démonstration 8</description>
     <servlet-name>ServletAvecParametreInitialisationWebXMLII</servlet-name>
@@ -38,6 +39,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>ServletAvecParametreInitialisationWebXMLII</servlet-name>
-    <url-pattern>/modules/module2/ServletAvecParametreInitialisationWebXMLII</url-pattern>
+    <url-pattern>/ServletAvecParametreInitialisationWebXMLII</url-pattern>
   </servlet-mapping>
 </web-app>
