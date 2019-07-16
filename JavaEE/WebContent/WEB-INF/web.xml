@@ -18,4 +18,12 @@
     <servlet-name>PremierServletConfigurationXml</servlet-name>
     <url-pattern>/servlet/PremierServletConfigurationWebXML</url-pattern>
   </servlet-mapping>
+  <error-page> 
+	<error-code>500</error-code>
+	<location>/modules/modules2/demonstration/500.html</location>
+   </error-page>
+  <error-page> 
+	<error-code>404</error-code>
+	<location>/modules/modules2/demonstration/404.html</location>
+   </error-page>
 </web-app>
