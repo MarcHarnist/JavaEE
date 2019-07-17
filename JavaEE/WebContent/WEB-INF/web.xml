@@ -20,11 +20,11 @@
   </servlet-mapping>
   <error-page>
     <error-code>500</error-code>
-    <location>/modules/modules2/demonstration/500.html</location>
+    <location>/404_500/500.html</location>
   </error-page>
   <error-page>
     <error-code>404</error-code>
-    <location>/modules/modules2/demonstration/404.html</location>
+    <location>/404_500/404.html</location>
   </error-page>
   
   <servlet>
@@ -41,4 +41,14 @@
     <servlet-name>ServletAvecParametreInitialisationWebXMLII</servlet-name>
     <url-pattern>/ServletAvecParametreInitialisationWebXMLII</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+	<description>Paramétrage d'une JSP présente dans le répertoire WEB-INF</description>
+	<servlet-name>premiereJSPDansWEB_INF</servlet-name>
+	  <jsp-file>/WEB-INF/modules/module3/demonstrations/premiereJSPDansWEB-INF.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>premiereJSPDansWEB_INF</servlet-name>
+	  <url-pattern>/modules/module3/demonstrations/secondePremiereJSP</url-pattern>
+	</servlet-mapping>
 </web-app>
