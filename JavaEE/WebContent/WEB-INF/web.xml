@@ -49,4 +49,9 @@
     <servlet-name>premiereJSPDansWEB_INF</servlet-name>
     <url-pattern>/modules/module3/demonstrations/secondePremiereJSP</url-pattern>
   </servlet-mapping>
+  <context-param>
+    <description>Lire des données dans le fichier web.xml</description>
+    <param-name>EMAIL_ADMINISTRATEUR</param-name>
+    <param-value>admin@google.fr</param-value>
+  </context-param>
 </web-app>
