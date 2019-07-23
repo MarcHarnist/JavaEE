@@ -1,17 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Page affichant une voiture</title>
-</head>
-<body>
-	<h1>Cette page affiche une voiture avec l'Expression Language si elle a Ã©tÃ© crÃ©Ã©e</h1>
+	<%@ include file="entete.html" %>
+	<h1 class="h3">Cette page affiche une voiture avec l'Expression Language si elle a été créée</h1>
 	
-	<a href="">RafraÃ®chir</a>
+	<a href="">Rafraîchir</a>
 	<p>
-		Remarquez l'absence de valeurs nulles si la voiture n'est pas crÃ©Ã©e.
+		Remarquez l'absence de valeurs nulles si la voiture n'est pas créée.
 	</p>
 	
 	<ul>
@@ -19,16 +11,13 @@
 			Marque : ${requestScope['voiture'].marque}
 		</li>
 		<li>
-			ModÃ¨le : ${requestScope.voiture.modele}
+			Modèle : ${requestScope.voiture.modele}
 		</li>
 		<li>
 			Immatriculation : ${voiture.immatriculation}
 		</li>
 		<li>
-			KilomÃ©trage : ${voiture.kilometrage}
+			Kilométrage : ${voiture.kilometrage}
 		</li>
 	</ul>
-	
-	<a href="demonstrations/demonstration3.html">Retour</a>
-</body>
-</html>
+	<%@ include file="piedDePage.html"%>
