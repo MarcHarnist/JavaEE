@@ -10,7 +10,6 @@
 <title>Internationalisation des messages</title>
 </head>
 <body>
-
 <!--    
 
 			MODIFIER L'URL: http://localhost:8080/Java_EE_Cours/modules/module8/internationalisationMessages?nom=Marc&langue=de
@@ -28,9 +27,7 @@
 	</p>
 	
 	<p>
-		<fmt:setBundle basename="fr.eni.javaee.module8.mes_messages"
-						var="r"
-		/>
+		<fmt:setBundle basename="fr.eni.javaee.module8.mes_messages" var="r" />
 		<fmt:message key="msg_bonjour" bundle="${r}">
 			<fmt:param value="${param.nom}"></fmt:param>
 		</fmt:message>
